@@ -67,6 +67,9 @@ allprojects {
 			name = "ParchmentMC"
 			url = "https://maven.parchmentmc.net/"
 		}
+        flatDir {
+	        dirs '../lib'
+	    }
 	}
 
 	tasks.withType(JavaCompile).configureEach {
